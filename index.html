@@ -5,30 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B SALE TIENDA</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
- </head>
- <body>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <nav class="navPrincipal">
+        <a href="https://www.bsale.cl/">BSALE TEST</a>
+        
+        <input id="buscar" type="text">
+        <button class="btnsearch"><img src="./media/icons8-búsqueda-24.png" alt=""></button>
+        <button class="btncarronav" > <img width="15" height="15" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt=""></button>
+ </nav>
+
+
+
+
+
+
+
+
+ 
     <div class="container">
-     <h1>hola mundo</h1>
+ 
     <hr>
-    <div class="row" id="items"></div>
+    <div class="bodycontainer" >
+
+    <div class="categories" id="category"> </div>
+    <div class="row" id="items"> </div>
+    <div class="notfound" id="notfounder"> </div>
+    <div class="selectores" id="selectores" >
+        <div class="content-select">
+        <select name="" id="">
+        
+        <option value="abc">A-Z</option>
+        <option value="cba">Z-A</option>
+        <option value="pricemax">MayorPrecio </option>
+        <option value="pricemin">Menor Precio </option>
+        <option value="discountmax">Mayor Descuento</option>
+        <option value="discountmin">Menor Descuento</option>
+    </select>
+    <i></i>
+
 </div>
 
-      <template id="template-card">
-        <div class="col-12  mb-2 col-md-4" >
-            <img src="" alt="" width="400" height="300" class="img-card-top">
-          <div class="card">
+
+<form action="">
+    
+    <input class="inputprice" type="number" autocomplete="off" placeholder="Price min"  id="pmin">
+    
+    
+    
+    <input class="inputprice" autocomplete="off" placeholder="Price max"type="number" id="pmax">
+    <button class="btnselectores"><div class="arrow-up"></div></button>
+</form>
+</div>
+    </div>
+
+
+
+</div>
+
+
+
+<div  id="pagination"> </div>
+
+
+
+
+
+
+
+<template id="template-category">
+<div id="ulcategory">
+    
+
+        <li class="licategory">
+            
+        </li>
+    
+</div>
+</template>
+<template id="template-notfound">
+ <h1>404 not found</h1>
+</template>
+
+<template id="template-card">
+        <div id="divcardid" class="divcard" >
+            <img src="" alt="" width="230" height="250" class="imagen">
+            <h5 id="titulocard" class="titulocard">Titulo</h5>
+          <div class="cards">
             <div class="card-body">
-              <h5>Titulo</h5>
-              <p>precio</p>
-              <button class="btn btn-dark">Comprar</button>
+                <hr>
+                <p class="pimg"></p>
+              <div class="info">
+              <a class="price">precio</a>
+              <button class="btncarro" > <img class="imgcarro" width="15" height="15" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt=""></button>
+            </div>
             </div>
           </div>
         </div>
-        </template>
+    
+    </template>
 
-
-
+    <template id="template-pagination">
+       <ul>
+        <li class="liPagination"></li>
+       </ul>
+    </template>
     <script src="app.js"></script>
  </body>
  </html>
