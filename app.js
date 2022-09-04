@@ -53,7 +53,7 @@ formElement.addEventListener('submit',(event)=>{
     pmin.value=''
 })
 
-const url = modo=='desarrollo'? 'http://127.0.0.1:8080' : 'https://bsale-app-tienda.herokuapp.com/'
+const url = modo=='desarrollo'? 'http://127.0.0.1:8080' : 'https://bsale-app-tienda.herokuapp.com'
 let urlactual = `${url}/products/all`
 ////////////////////////////////////////////
 const dataFetch = async () =>{
