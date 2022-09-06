@@ -42,13 +42,17 @@ el sitio en una cuenta AWS.
 ```
 npm install
 ```
-3. Levatar base de datos
+3. Cambiar a modo 'desarrollo'
 ```
-utilizar las credeciales para rellernar .env
+En la variable modo que se encuentra en app.js cambiar a 'desarrollo'
 ```
 4. Consulte la documentacion
 ```
 https://bsale-app-tienda.herokuapp.com/api-docs
+```
+5. Levantar servidor Back
+```
+https://github.com/Agustin2214/Server-Bsale
 ```
 ###Deploy
 
