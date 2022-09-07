@@ -1,5 +1,7 @@
 body{
-  background-color: #f5f5f5;
+  width: auto;
+  margin: auto;
+  
 }
 .divcard{
     background-color: #ffffff;
@@ -68,7 +70,7 @@ nav{
     display: flex;
     justify-content: space-around;
     height: 150%;
-    width: 110%;
+    width: 100%;
     margin-left: -50px;
     margin-top: -5px;
     margin-bottom: -8px;
@@ -110,7 +112,7 @@ margin-left: 410px;
     background-color: #cecece !important;
     margin-top: -9px;
     margin-left: -8px;
-    
+    padding-left: 15px;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -128,7 +130,7 @@ margin-left: 410px;
     height: 50px;
     list-style: none;
     align-items: center;
-    justify-content: left 50px;
+
     padding-left: 10px;
 }
 
@@ -149,9 +151,7 @@ margin-left: 410px;
    cursor: pointer;
 }
 
-.selectores{
 
-}
 
 
 
@@ -295,6 +295,16 @@ margin-left: 410px;
     display: none;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 200px;
+    background:orangered;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 
       @media (max-width: 900px) {
        
