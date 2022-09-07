@@ -1,3 +1,7 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
 body{
   width: auto;
   margin: auto;
@@ -8,7 +12,7 @@ body{
     box-shadow: -8px -4px 10px 0px rgba(0,0,0,0.73);
     -webkit-box-shadow: -8px -4px 10px 0px rgba(0,0,0,0.73);
     -moz-box-shadow: -8px -4px 10px 0px rgba(0,0,0,0.73);
-             
+     margin-bottom: 15px;           
 }
 
 .divcard:hover{
@@ -303,11 +307,90 @@ footer{
     background:orangered;
     justify-content: space-around;
     align-items: center;
+  
+     
+position: absolute;
+bottom: -200px;
+width: 100%;
+        
+   color: white;
+      }
     
-}
 
-      @media (max-width: 900px) {
+
+      @media (max-width: 818px) {
        
- 
+        .navPrincipal{
+            display: flex;
+            width: 105%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            
+        }
+        #buscar{
+            justify-content: center;
+            margin: auto;
+            padding: 0;
+            
+            
      
       }
+      .btnsearch{
+        display: none;
+      }
+      .bodycontainer{
+        background-color: rebeccapurple;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+      .btncarronav{
+        display: none;
+      }
+      .categories{
+        
+        
+        width: 100%;
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fill,80px);
+        
+            
+            justify-content: space-around;
+      }
+      .licategory{
+        margin: 0%;
+        padding: 0;
+        margin-top: 10px;
+        width: 40px;
+        height: 25px;
+        font-size: 10px;
+
+      }
+      .row{
+        order: 2;
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,230px);
+            gap: 30px;
+            padding: 20px;
+            justify-content: center;
+        }
+      
+
+      .selectores{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        order: 1;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+      
+    
+    
