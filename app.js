@@ -1,4 +1,4 @@
-const modo = 'desarrollo'
+const modo = 'produccion'
 
 
 const urlimgnotfound = 'https://ih1.redbubble.net/image.1861339560.3228/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg'
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 inputBuscar.addEventListener('keyup', (e)=>{
 
     let texto = e.target.value
-    console.log(texto)
+    
     dataNameFetch(texto)
 })
 
@@ -57,7 +57,7 @@ const url = modo=='desarrollo'? 'http://127.0.0.1:8080' : 'https://bsale-app-tie
 let urlactual = `${url}/products/all`
 ////////////////////////////////////////////
 const dataFetch = async () =>{
-    console.log(url)
+    
     try{
         const res = await fetch(`${url}/products/all`)
         const data = await res.json()
