@@ -1,4 +1,4 @@
-const modo = 'desarrollo'
+const modo = 'produccion'
 
 
 const urlimgnotfound = 'https://ih1.redbubble.net/image.1861339560.3228/poster,504x498,f8f8f8-pad,600x600,f8f8f8.jpg'
