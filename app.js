@@ -104,13 +104,12 @@ const dataCategoryFetch = async (id)=> {
         dataSelectorFetch(selectElement.value,'','')
     }
     catch(err){
-        console.log(err)
+        
     }
 }
 
 const dataSelectorFetch = async (orden,pmax,pmin)=> {
-console.log(orden)
-console.log(urlactual)
+
 
 orden?orden:'abc'
 pmax?pmax:"500000"
@@ -121,9 +120,7 @@ if(urlactual == `${url}/products/all`){
 
         const res = await fetch(`${urlactual}?orden=${orden}&pmax=${pmax}&pmin=${pmin}`)
         const data = await res.json()
-        console.log(`${urlactual}?orden=${orden}&pmax=${pmax}&pmin=${pmin}`)
-        console.log(data)
-        console.log(urlactual)
+        
         pintarCards(data)
     }
     catch(err){
@@ -134,13 +131,11 @@ if(urlactual == `${url}/products/all`){
 
     const res = await fetch(`${urlactual}&orden=${orden}&pmax=${pmax}&pmin=${pmin}`)
     const data = await res.json()
-    console.log(`${urlactual}&orden=${orden}&pmax=${pmax}&pmin=${pmin}`)
-    console.log(data)
-    console.log(urlactual)
+  
     pintarCards(data)
 }
     catch(err){
-        console.log(err)
+        
         pintarNotfound()
 }
 }
@@ -196,12 +191,12 @@ const categoryFetch = async () =>{
         const res = await fetch(`${url}/category`)
         const data = await res.json()
        
-        console.log(data)
+        
 
         pintarCategory(data)
     }
     catch(err){
-        console.log(err)
+       
     }
 }
 
