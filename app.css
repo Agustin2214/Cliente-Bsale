@@ -322,7 +322,7 @@ width: 100%;
        
         .navPrincipal{
             display: flex;
-            width: 105%;
+            width: 100%;
             height: 100%;
             flex-direction: column;
             justify-content: center;
@@ -342,7 +342,7 @@ width: 100%;
         display: none;
       }
       .bodycontainer{
-        background-color: rebeccapurple;
+        background-color: rgb(249, 249, 250);
         flex-direction: column;
         justify-content: center;
         width: 100%;
@@ -353,7 +353,7 @@ width: 100%;
       .categories{
         
         
-        width: 100%;
+        width: 99%;
         
         display: grid;
         grid-template-columns: repeat(auto-fill,80px);
@@ -373,12 +373,20 @@ width: 100%;
       .row{
         order: 2;
         margin: auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill,230px);
+        width: 90%;
+        display: flex;
+        flex-direction: column;
             gap: 30px;
-            padding: 20px;
+      
+            align-items: center;
             justify-content: center;
+        }
+        .divcard{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
         }
       
 
